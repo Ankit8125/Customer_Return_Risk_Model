@@ -33,4 +33,4 @@ def predict(data: CustomerData):
     ]])
 
     prediction = model.predict(input_array)[0]
-    return {"risk_score": round(prediction, 2)}
+    return {"risk_score": round(float(prediction), 2)}
